@@ -1,0 +1,52 @@
+    /**PAGE SET UP**/
+
+    html{
+        font-size: 100%;
+    }
+    .blocpage{
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 2rem;
+        font-family: "Raleway", "Arial", "sans-serif";
+        scroll-behavior: smooth;
+    
+    }
+    
+        /**HEADER**/
+    
+    header{
+        font-size: 100%;
+        display: block;
+    }
+    
+    .menu{
+        display: grid;
+        grid-template-columns: 66% auto auto auto;
+        margin-top: 2rem;
+        margin-right: 10px;
+        font-weight: 300;   
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        padding-top: 15px;
+        border-top: 2px solid #0065FC;
+    }
+    
+    .login{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #0065FC;
+        padding-top: 15px;
+        border-top: 2px solid #0065FC;
+    }
+    
