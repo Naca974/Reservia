@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be8e39ade2.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 
@@ -24,25 +25,186 @@
                 <a class="nav" href="#activites">Activités</a>
                 <a class="login" href="#">S'inscrire<a>
         </nav>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre de ville ou en pleine nature</p>
     </header>
 
     <!---------MAIN---------->
 
     <main class="main">
-        
-    <!---------SEARCH + FILTERS ---------->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre de ville ou en pleine nature</p>
-        
+
+    <!---------SEARCH + FILTERS---------->
     
+    <section class="searchbar">
+        <span class="searchbaricon"><i class="fas fa-map-marker-alt"></i></span>
+        <div><input class="searchform" type="search" placeholder="Marseille, France"></div>
+        <button class="submitinput">
+            <span class="submitinput">Rechercher</span>
+        </button>
+    </section>
 
+    <section class="searchfiltersbox">
+        <h2 class="filterstitle">Filtres</h2>
+            <div class="searchfilters">
+                <div class="searchfiltersframe">
+                   <i class="fas fa-money-bill-wave searchfiltersicon" aria-hidden="true"></i>
+                </div>
+                <span class="searchfilterstitles">Économique</span>
+            </div>
+            <div class="searchfilters">
+                <div class="searchfiltersframe">
+                    <i class="fas fa-child searchfiltersicon" aria-hidden="true"></i>
+                </div>
+                 <span class="searchfilterstitles">Familial</span>
+            </div>
+            <div class="searchfilters">
+                 <div class="searchfiltersframe">
+                    <i class="fas fa-heart searchfiltersicon" aria-hidden="true"></i>
+                </div>
+                 <span class="searchfilterstitles">Romantique</span>
+            </div>
+            <div class="searchfilters">
+                 <div class="searchfiltersframe">
+                    <i class="fas fa-dog searchfiltersicon" aria-hidden="true"></i>
+                </div>
+                 <span class="searchfilterstitles">Animaux autorisés</span>
+            </div>
+    </section>
 
+<!---------INFO---------->
+    
+    <section class="infobox">
+        <div class="infoframe">
+            <i class="fas fa-info infoicon" aria-hidden="true"></i>
+        </div>
+        <p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
+    </section>
 
+<!---------OFFERS---------->
 
+    <section id="offers">
+        <div class="offersbox">
+            <h2 class="offerstitle">Hébergement à Marseille</h2>
+        <article class="offerspannel">
+            <a href="#">
+                <figure class="offerscard">
+                    <img class="offersimg" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room + bunkbed + mirror">
+                    <figcaption class="offerscardcaption">
+                        <h3 class="offerscarditle">Auberge la Cannebière</h3>
+                    </figcaption>
+                </figure>
+                <p class="offerscardp">Nuit à partir de <strong>25€</strong></p>
+                <div class="ratingstars">
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon" data-active="false" aria-hidden="true"></i>
+                </div>
+            </a>
+        </article>
+        <article class="offerspannel">
+            <a href="#">
+                <figure class="offerscard">
+                    <img class="offersimg" src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="double bed room">
+                    <figcaption class="offerscardcaption">
+                        <h3 class="offerscarditle">Hôtel du port</h3>
+                    </figcaption>
+                </figure>
+                <p class="offerscardp">Nuit à partir de <strong>52€</strong></p>
+                <div class="ratingstars">
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                </div>
+            </a>
+        </article>
 
+        <article class="offerspannel">
+            <a href="#">
+                <figure class="offerscard">
+                    <img class="offersimg" src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="double room closet">
+                    <figcaption class="offerscardcaption">
+                        <h3 class="offerscarditle">Hôtel Les mouettes</h3>
+                    </figcaption>
+                </figure>
+                <p class="offerscardp">Nuit à partir de <strong>76€</strong></p>
+                <div class="ratingstars">
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon" data-active="false" aria-hidden="true"></i>
+                </div>
+            </a>
+        </article>
 
+        <article class="offerspannel">
+            <a href="#">
+                <figure class="offerscard">
+                    <img class="offersimg" src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="double room + bleu frame">
+                    <figcaption class="offerscardcaption">
+                        <h3 class="offerscarditle">Auberge de la mer</h3>
+                    </figcaption>
+                </figure>
+                <p class="offerscardp">Nuit à partir de <strong>46€</strong></p>
+                <div class="ratingstars">
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon" data-active="false" aria-hidden="true"></i>
+                    <i class="fas fa-star ratingstarsicon" data-active="false" aria-hidden="true"></i>
+                </div>
+            </a>
+        </article>
+
+        <article class="offerspannel">
+            <a href="#">
+                <figure class="offerscard">
+                    <img class="offersimg" src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="romm + bunkbed + mirror">
+                    <figcaption class="offerscardcaption">
+                        <h3 class="offerscarditle">Auberge Le Panier</h3>
+                    </figcaption>
+                </figure>
+                <p class="offerscardp">Nuit à partir de <strong>23€</strong></p>
+                <div class="ratingstars">
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon" data-active="false" aria-hidden="true"></i>
+                </div>
+            </a>
+        </article>
+
+        <article class="offerspannel">
+            <a href="#">
+                <figure class="offerscard">
+                    <img class="offersimg" src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="romm + bunkbed + mirror">
+                    <figcaption class="offerscardcaption">
+                        <h3 class="offerscarditle">Hôtel chez Amina</h3>
+                    </figcaption>
+                </figure>
+                <p class="offerscardp">Nuit à partir de <strong>96€</strong></p>
+                <div class="ratingstars">
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                    <i class="fas fa-star ratingstarsicon"></i>
+                </div>
+            </a>
+        </article>
+
+        <a class="viewmore" href="#">Afficher plus</a>
+    </div>
+
+    <div class="popular"></div>
+    </section>
 
     </main>
-    </div>   
+    </div> 
 </body>
 </html>
