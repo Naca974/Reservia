@@ -8,7 +8,6 @@ html{
     max-width: 1440px;
     margin: auto;
     padding: 0 2rem;
-    box-sizing: border-box;
     font-family: "Raleway", "Arial", "sans-serif";
     scroll-behavior: smooth;
 }
@@ -158,6 +157,7 @@ a.nav:hover ,a.login:hover{
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .infoframe{
@@ -177,17 +177,35 @@ a.nav:hover ,a.login:hover{
 
 /**OFFERS**/
 
-#offers{
-    margin-top: 2rem;
+.offers{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.offers > a:first-child {
+    display: none;
+}
+
+.offersbox > a:first-child {
+    display: none;
 }
 
 .offersbox{
-    display: flex;
-    flex-direction: column;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
+    
+}
+
+.offerstitle{
+    grid-column: 1/-1;
+    height: 50px;
+    margin-top: 0px;
+    color: black;
 }
 
 .offerspannel{
@@ -197,7 +215,6 @@ a.nav:hover ,a.login:hover{
     box-shadow: 0 0 16px #d9d9d9;
     cursor: pointer;
     box-sizing: border-box;
-    height: 100%;
 }
 
 a{
@@ -252,5 +269,61 @@ div{
 }
 
 .viewmore{
+    grid-column: 1/-1;
+    font-weight: bold;
     color: black;
+}
+
+/**POPULAR**/
+
+.popularbox{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.populartitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularpannel{
+    background-color: white;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #d9d9d9;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.popularcard{
+    margin: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.popularimg{
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 50%;
+    max-height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.popularcardcaption{
+    display: block;
+}
+
+.popularcardtitle{
+    padding-left: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.popularcardp{
+    color: black;
+    padding-left: 15px;
 }
