@@ -26,7 +26,7 @@ header{
 .menu{
     display: grid;
     grid-template-columns: 66% auto auto auto;
-    margin-top: 2rem;
+    margin-top: -8px;
     margin-right: 10px;
     font-weight: 300;   
  }
@@ -149,6 +149,8 @@ a.nav:hover ,a.login:hover{
 
 .searchfilters:hover{
     background-color: #f2f2f2;
+    transform: scale(1.04);
+    transition-duration: 200ms;
 }
 
 /**INFOS**/
@@ -178,33 +180,36 @@ a.nav:hover ,a.login:hover{
 /**OFFERS**/
 
 .offers{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 66% 33%;
 }
 
-.offers > a:first-child {
+/** .offers > a:first-child {
     display: none;
 }
 
 .offersbox > a:first-child {
     display: none;
-}
+} **/
 
 .offersbox{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     padding: 1rem;
-    
 }
+
 
 .offerstitle{
     grid-column: 1/-1;
-    height: 50px;
-    margin-top: 0px;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     color: black;
 }
 
@@ -278,7 +283,7 @@ div{
 
 .popularbox{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 2rem;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
@@ -286,11 +291,14 @@ div{
 }
 
 .populartitle{
+    margin: 0px;
     display: flex;
     justify-content: space-between;
 }
 
 .popularpannel{
+    display: flex;
+    flex-direction: row;
     background-color: white;
     padding: 8px;
     border-radius: 15px;
@@ -301,6 +309,9 @@ div{
 
 .popularcard{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 15px 0 0 15px;
 }
 
@@ -326,4 +337,125 @@ div{
 .popularcardp{
     color: black;
     padding-left: 15px;
+}
+
+.offerspannel:hover, .popularpannel:hover{
+    transform: scale(1.06);
+    transition-duration: 200ms;
+}
+
+/**ACTIVITIES**/
+
+.activitiescontainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+    column-gap: 2rem;
+}
+
+.imgcontainter{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.activitiesimg{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cardtitles{
+    margin: 1.2rem 1.5rem;
+}
+
+.firstcard{
+    grid-area: 1 / 1 / 7 / 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.secondcard{
+    grid-area: 1 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.thirdcard{
+    grid-area: 5 / 2 / 7 / 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.fourthcard{
+    grid-area: 1 / 3 / 7 / 4;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.fifthcard{
+    grid-area: 1 / 4 / 3 / 5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.sixthcard{
+    grid-area: 5 / 4 / 7 / 5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.firstcard:hover, .secondcard:hover, .thirdcard:hover, .fourthcard:hover, .fifthcard:hover, .sixthcard:hover{
+    transform: scale(1.06);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+/**FOOTER**/
+
+.footer{
+    margin-top: 50px;
+    padding: 2rem;
+    font-family: "Raleway", "Arial", "sans-serif";
+    background-color: #F2F2F2;
+}
+
+.footerbox{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 100%;
+    width: 1440px;
+}
+
+.columnone, .columntwo, .columnthree{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    row-gap: 0.75rem;
+}
+
+.footlink{
+    text-decoration: none;
+    color: black;
 }
