@@ -181,86 +181,63 @@ a.nav:hover ,a.login:hover{
 
 .offers{
     display: grid;
-    column-gap: 2rem;
     grid-template-columns: 66% 33%;
+    column-gap: 2rem;
 }
 
-/** .offers > a:first-child {
-    display: none;
+.housingbox{
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
 }
 
-.offersbox > a:first-child {
-    display: none;
-} **/
+.offershead{
+    margin: 0;
+    padding: 0 0 2rem 0;
+}
 
-.offersbox{
+.housingoffers{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    background-color: #F2F2F2;
-    border-radius: 1.5rem;
-    padding: 1rem;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-
-.offerstitle{
-    grid-column: 1/-1;
-    margin-block-start: 0.83rem;
-    margin-block-end: 0.83rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: black;
-}
-
-.offerspannel{
-    background-color: white;
-    padding: 8px;
-    border-radius: 15px;
-    box-shadow: 0 0 16px #d9d9d9;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-a{
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.offerscard{
-    margin: 0;
-}
-
-.offersimg{
-    height: 7rem;
-    object-fit: cover;
-    max-width: 100%;
+.card{
     width: 100%;
+    box-shadow: 0 0 16px #d9d9d9;
+    border-radius: 1.5rem;
+    background-color: white;
+}
+
+.housingimgbox{
+    padding: 6px 6px 0 6px;
+}
+
+.housingimg{
+    object-fit: cover;
+    object-position: center;
+    height: 7vw;
+    width: 100%;
+    max-width: 100%;
     max-height: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
-.offerscardcaption{
-    display: block;
+.offtitles{
+    margin: 2px 10px 5px 10px;
 }
 
-.offerscarditle{
-    padding-left: 15px;
-    color: black;
-    font-weight: bold;
-}
-
-.offerscardp{
-    color: black;
-    padding-left: 15px;
-}
-
-div{
-    display: block;
+.offp{
+    margin: 0px 10px 5px 10px;
 }
 
 .ratingstars{
-    padding-left: 15px;
+    margin: 0px 10px 5px 10px;
+    padding: 4px;
     color: #0065FC;
 }
 
@@ -274,8 +251,12 @@ div{
 }
 
 .viewmore{
-    grid-column: 1/-1;
     font-weight: bold;
+    color: black;
+}
+
+a{
+    text-decoration: none;
     color: black;
 }
 
@@ -283,68 +264,74 @@ div{
 
 .popularbox{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 2rem;
-    background-color: #F2F2F2;
-    border-radius: 1.5rem;
+    grid-template-rows: auto repeat(3, 1fr);
     padding: 2rem;
+    grid-row-gap: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
 }
 
-.populartitle{
-    margin: 0px;
+.popularhead{
+    margin: 0;
     display: flex;
     justify-content: space-between;
-}
-
-.popularpannel{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 8px;
-    border-radius: 15px;
-    box-shadow: 0 0 16px #d9d9d9;
-    cursor: pointer;
-    box-sizing: border-box;
 }
 
 .popularcard{
-    margin: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px 0 0 15px;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 6px;
+    box-shadow: 0 0 16px #d9d9d9;
+}
+
+.popularimgbox{
+    position: relative;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+    height: 100%;
 }
 
 .popularimg{
-    height: 7rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    max-width: 100%;
-    width: 50%;
-    max-height: 100%;
     border-radius: 1rem 0 0 1rem;
 }
 
-.popularcardcaption{
-    display: block;
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4px;
 }
 
-.popularcardtitle{
-    padding-left: 15px;
-    color: black;
+.poptitles{
     font-weight: bold;
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
-.popularcardp{
-    color: black;
-    padding-left: 15px;
+.popp{
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
-.offerspannel:hover, .popularpannel:hover{
+.textcontainer>div.ratingstars{
+    margin: 0px 10px 0px 10px;
+}
+
+.card:hover, .popularcard:hover{
     transform: scale(1.06);
     transition-duration: 200ms;
 }
 
+
 /**ACTIVITIES**/
+
+#activities{
+    margin-top: 4rem;
+}
 
 .activitiescontainer{
     display: grid;
