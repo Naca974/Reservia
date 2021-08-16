@@ -177,6 +177,10 @@ a.nav:hover ,a.login:hover{
     color: #0065FC;
 }
 
+.infotext{
+    font-weight: bold;
+}
+
 /**OFFERS**/
 
 .offers{
@@ -368,7 +372,7 @@ a{
 }
 
 .secondcard{
-    grid-area: 1 / 2 / 4 / 3;
+    grid-area: 1 / 2 / 5 / 3;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 16px #d9d9d9;
@@ -377,7 +381,7 @@ a{
 }
 
 .thirdcard{
-    grid-area: 5 / 2 / 7 / 3;
+    grid-area: 6 / 2 / 7 / 3;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 16px #d9d9d9;
@@ -395,7 +399,7 @@ a{
 }
 
 .fifthcard{
-    grid-area: 1 / 4 / 3 / 5;
+    grid-area: 1 / 4 / 4 / 5;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 16px #d9d9d9;
@@ -446,3 +450,5 @@ a{
     text-decoration: none;
     color: black;
 }
+
+/**RESPONSIVE**/
