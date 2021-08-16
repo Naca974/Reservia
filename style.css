@@ -452,3 +452,29 @@ a{
 }
 
 /**RESPONSIVE**/
+
+@media screen and (max-width: 1195px){
+
+    .offers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .popularbox{
+        row-gap: 2rem;
+        padding: 2rem;
+        width: 100%;
+    }
+    .housingbox{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+    }
+    .housingimg, .popularimg{
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+}
