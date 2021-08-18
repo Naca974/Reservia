@@ -12,6 +12,11 @@ html{
     scroll-behavior: smooth;
 }
 
+.body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 section img{
     border-style: none;
 }
@@ -40,7 +45,7 @@ a.nav:hover ,a.login:hover{
     border-top: 2px solid #0065FC;
 }
 
-.nav{
+.nav, .navact{
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -93,6 +98,10 @@ a.nav:hover ,a.login:hover{
     padding: 0 0.8rem;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.submitinput > i{
+    display: none;
 }
 
 /**FILTERS**/
@@ -453,7 +462,7 @@ a{
 
 /**RESPONSIVE**/
 
-@media screen and (max-width: 1195px){
+@media screen and (max-width: 1100px){
 
     .offers{
         display: flex;
@@ -462,6 +471,8 @@ a{
         gap: 2rem;
     }
     .popularbox{
+        display: grid;
+        order: -1;
         row-gap: 2rem;
         padding: 2rem;
         width: 100%;
@@ -471,10 +482,98 @@ a{
         grid-template-rows: repeat(6, 1fr);
         width: 100%;
     }
-    .housingimg, .popularimg{
-    }
 }
 
 @media screen and (max-width: 375px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+    }
+
+    .logo{
+        grid-area: 1/1/2/2;
+    }
+
+    .nav{
+        margin-left: 0px;
+        grid-area: 2/1/2/2;
+    }
+
+    .navact{
+        margin-right: 0px;
+        grid-area: 2/2/2/2;
+    }
+
+    .login{
+        margin-right: 0px;
+        grid-area: 1/2/2/2;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    a.nav:hover ,a.login:hover{
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
     
+    .searchbaricon{
+        border-radius: 1rem;
+    }
+
+    .submitinput{
+        border-radius: 1rem;
+    }
+
+    .submitinputtext{
+        display: none;
+    }
+
+    i.fa-search{
+        display: flex;
+        text-align: center;
+    }
+
+    .popularbox{
+        display: grid;
+        grid-template-rows: auto repeat(3, 1fr);
+        grid-template-columns: auto;
+        padding: 2rem;
+        row-gap: 2rem;
+        background-color: #f2f2f2;
+        border-radius: 0px;
+    }
+
+    .housingbox{
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        padding: 2rem;
+        background-color: white;
+    }
+
+    .housingoffers{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: auto;
+    }
+
+    .activitiescontainer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 2rem;
+    }
+
+    .activitiescontainer>*{
+        grid-area: auto;
+    }
+
+    .footerbox{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
