@@ -41,7 +41,7 @@ header{
     align-items: center;
 }
     
-a.nav:hover ,a.login:hover{
+a.nav:hover, a.navact:hover ,a.login:hover{
     border-top: 2px solid #0065FC;
 }
 
@@ -71,10 +71,12 @@ a.nav:hover ,a.login:hover{
 }
 
 .searchbaricon{
+    display: flex;
     background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
+    padding: 0.8rem 1.25rem;
     border-radius: 1rem 0 0 1rem;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .searchform{
@@ -485,21 +487,34 @@ a{
 }
 
 @media screen and (max-width: 375px){
+    .blocpage{
+        padding: 0px;
+    }
+
+    body{
+        margin: 0px;
+    }
+
     .menu{
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: 50%;
+        margin: 0px;
+        padding-top: 5px;
     }
 
     .logo{
         grid-area: 1/1/2/2;
+        margin: auto;
     }
 
     .nav{
+        padding: 10px;
         margin-left: 0px;
         grid-area: 2/1/2/2;
     }
 
     .navact{
+        padding: 10px;
         margin-right: 0px;
         grid-area: 2/2/2/2;
     }
@@ -514,17 +529,22 @@ a{
         justify-content: flex-start;
     }
 
-    a.nav:hover ,a.login:hover{
+    a.nav:hover, a.navact:hover ,a.login:hover{
         border-bottom: 2px solid #0065FC;
         border-top: none;
     }
-    
-    .searchbaricon{
-        border-radius: 1rem;
+
+    h1, p{
+        padding-left: 15px;
     }
 
-    .submitinput{
-        border-radius: 1rem;
+/**RESPONSIVE HEADER**/
+    
+/**RESPONSIVE FILTRES**/
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .submitinputtext{
@@ -533,8 +553,28 @@ a{
 
     i.fa-search{
         display: flex;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 12px;
+        height: 19px;
+        padding: 15px 7.2px;
     }
+
+    .searchfiltersbox{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1rem;
+        padding-left: 15px;
+    }
+
+    .infoframe{
+        height: 2rem;
+        width: 3.3rem;
+    }
+
+/**RESPONSIVE OFFERS**/
+
 
     .popularbox{
         display: grid;
@@ -558,6 +598,13 @@ a{
         grid-template-columns: auto;
     }
 
+/**RESPONSIVE ACTIVITIES**/
+
+    #activities{
+        margin: -10px 30px 0px 30px;
+
+    }
+
     .activitiescontainer{
         display: grid;
         grid-template-columns: auto;
@@ -568,6 +615,8 @@ a{
     .activitiescontainer>*{
         grid-area: auto;
     }
+
+/**RESPONSIVE FOOTER**/
 
     .footerbox{
         display: flex;
