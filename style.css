@@ -689,10 +689,19 @@ a{
 
     .searchfiltersbox{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         row-gap: 1rem;
+        column-gap: 1rem;
         padding-left: 15px;
+    }
+
+    .filterstitle{
+        width: 100%;
+    }
+
+    .searchfilters{
+        margin-right: 0px;
     }
 
     .infoframe{
@@ -778,6 +787,10 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .columnone, .columntwo, .columnthree{
+        width: 100%;
     }
 
 }
