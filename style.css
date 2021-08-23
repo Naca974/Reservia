@@ -569,8 +569,14 @@ a{
     }
 
     .infoframe{
+        margin: 0 10px 0 10px;
         height: 2rem;
-        width: 3.3rem;
+        width: 3.1rem;
+    }
+
+    .infotext{
+        padding: 0px;
+        font-weight: normal;
     }
 
 /**RESPONSIVE OFFERS**/
@@ -589,8 +595,8 @@ a{
     .housingbox{
         display: grid;
         grid-template-rows: repeat(3, min-content);
-        padding: 2rem;
         background-color: white;
+        justify-content: center;
     }
 
     .housingoffers{
@@ -601,6 +607,7 @@ a{
 /**RESPONSIVE ACTIVITIES**/
 
     #activities{
+        justify-content: center;
         margin: -10px 30px 0px 30px;
 
     }
@@ -609,20 +616,31 @@ a{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(6, 1fr);
-        row-gap: 2rem;
+        row-gap: 1rem;
     }
 
     .activitiescontainer>*{
         grid-area: auto;
     }
 
+    .imgcontainter{
+        height: 100px;
+    }
+
+    .activitiesimg{
+        height: 100px;
+    }
+
 /**RESPONSIVE FOOTER**/
+
+    .footer{
+        padding: 1.5rem;
+    }
 
     .footerbox{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
-        width: 100%;
+        justify-content: center;
     }
 
 }
