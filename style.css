@@ -486,6 +486,98 @@ a{
     }
 }
 
+@media screen and (max-width: 900px){
+    .blocpage{
+        padding: 0px;
+    }
+
+    body{
+        margin: 0px;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: 50%;
+        margin: 0px;
+        padding-top: 5px;
+    }
+
+    .logo{
+        grid-area: 1/1/2/2;
+        margin: auto;
+    }
+
+    .nav{
+        padding: 10px;
+        margin-left: 0px;
+        grid-area: 2/1/2/2;
+    }
+
+    .navact{
+        padding: 10px;
+        margin-right: 0px;
+        grid-area: 2/2/2/2;
+    }
+
+    .login{
+        margin-right: 0px;
+        grid-area: 1/2/2/2;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    a.nav:hover, a.navact:hover ,a.login:hover{
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+
+    h1, p{
+        padding-left: 15px;
+    }
+
+    /**RESPONSIVE FILTRES**/
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .submitinputtext{
+        display: none;
+    }
+
+    i.fa-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12px;
+        height: 19px;
+        padding: 15px 7.2px;
+    }
+
+    .searchfiltersbox{
+        display: flex;
+        align-items: flex-start;
+        row-gap: 1rem;
+        padding-left: 15px;
+    }
+
+    .infoframe{
+        margin: 0 10px 0 10px;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .infotext{
+        padding: 0px;
+        font-weight: normal;
+    }
+
+}
+
 @media screen and (max-width: 768px){
     .blocpage{
         padding: 0px;
@@ -562,7 +654,6 @@ a{
 
     .searchfiltersbox{
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
         row-gap: 1rem;
         padding-left: 15px;
@@ -571,12 +662,40 @@ a{
     .infoframe{
         margin: 0 10px 0 10px;
         height: 2rem;
-        width: 3.1rem;
+        width: 2rem;
     }
 
     .infotext{
         padding: 0px;
         font-weight: normal;
+    }
+
+    /**RESPONSIVE OFFERS**/
+
+
+    .popularbox{
+        display: grid;
+        grid-template-rows: auto repeat(3, 1fr);
+        grid-template-columns: auto;
+        padding: 2rem;
+        row-gap: 2rem;
+        background-color: #f2f2f2;
+        border-radius: 0px;
+    }
+
+    .housingbox{
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        background-color: white;
+    }
+
+    .housingimg{
+        height: 9rem;
+    }
+
+    .housingoffers{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: auto;
     }
 
 /**RESPONSIVE activities**/
