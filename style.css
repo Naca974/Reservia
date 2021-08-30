@@ -732,7 +732,7 @@ a{
     }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 488px){
     .blocpage{
         padding: 0px;
     }
